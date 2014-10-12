@@ -126,7 +126,7 @@ public class Calendar : MonoBehaviour {
 		for (var i = 1; i <= count; i++){
 			Vector3 pos = new Vector3(x, y, 0 );
 			Quaternion q = new Quaternion(0, 0, 0, 1);
-			GameObject obj = CreateWord(i.ToString(),pos,q);
+			CreateWord(i.ToString(),pos,q);
 
 			if ((i+offset)%7==0){
 				x = 0;
@@ -138,7 +138,7 @@ public class Calendar : MonoBehaviour {
 		{
 			Vector3 pos = new Vector3 (deltaX*3, 80, 0);
 			Quaternion q = new Quaternion (0, 0, 0, 1);
-			GameObject obj = CreateWord(dt.ToString("MMMM"),pos,q);
+			CreateWord(dt.ToString("MMMM"),pos,q);
 
 		}
 	}
